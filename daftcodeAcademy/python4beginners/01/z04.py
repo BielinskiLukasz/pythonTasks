@@ -14,6 +14,11 @@ def powset(inputSet):
     return powerset
 
 
+# shorthand
+# result = {frozenset()}
+# for x in U:
+#     result |= {y | frozenset({x}) for y in result}
+
 result = powset(U)
 
 assert frozenset(('👻', '🕵', '🔺', '🐉', '🐍', '🦂', '🔥', '🌻', '🐙', '🌌')) in result
