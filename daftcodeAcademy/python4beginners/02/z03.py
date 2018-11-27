@@ -1,4 +1,7 @@
-# zadanie 3
+# Zadanie 3
+# Napisz funkcję char_frequency, która przyjmuje jako argument string.
+# Dla podanego stringa funkcja musi zliczyć ile razy wystąpiła każda litera.
+# Zwróc wynik jako słownik wartości ile razy wystąpił każdy znak, gdzie klucz to występujący znak a wartścią jest liczba wystąpień tego znaku.
 
 def char_frequency(string=""):
     result = {}
@@ -8,7 +11,6 @@ def char_frequency(string=""):
         else:
             result[x] = 1
     return result
-
 
 assert char_frequency("576") == {'5': 1, '6': 1, '7': 1}
 assert char_frequency() == {}
