@@ -4,15 +4,19 @@
 # Jedna o nazwie prime ma sprawdzić czy zadana liczba n jest liczbą pierwszą, zwracając True/False.
 
 # Druga funkcja twins ma sprawdzić czy dane liczby n, k są liczbami bliźniaczymi.
-# Funkcja może przyjmować też jeden parametr - jeśli podana liczba jest liczbą bliźniaczą zwróć jej bliźniaka, jeśli nie jest bliźniacza to zwróć False.
+# Funkcja może przyjmować też jeden parametr - jeśli podana liczba jest liczbą bliźniaczą zwróć jej bliźniaka,
+# jeśli nie jest bliźniacza to zwróć False.
 
-# Obie funkcje mają przyjmować liczby naturalne. Podanie innej liczby niż naturalna w wymaganym parametrze ma skutkować zwróceniem None.
+# Obie funkcje mają przyjmować liczby naturalne. Podanie innej liczby niż naturalna w wymaganym parametrze
+# ma skutkować zwróceniem None.
 
-# Definicja 1: Liczba pierwsza to liczba naturalna większa od 1, która ma dokładnie dwa dzielniki naturalne: jedynkę i siebie samą.
+# Definicja 1: Liczba pierwsza to liczba naturalna większa od 1, która ma dokładnie dwa dzielniki naturalne: jedynkę
+# i siebie samą.
 # Definicja 2: Liczby bliźniacze to takie dwie liczby pierwsze, których różnica wynosi 2.
 
 # Przydatne linki:
 # https://stackoverflow.com/questions/18833759/python-prime-number-checker
+
 
 def prime(n):
     if type(n) == int:
@@ -43,9 +47,9 @@ def twins(n, *args):
         return prime(n) and prime(args[0])
 
 
-assert prime(101) == True
+assert prime(101) is True
 assert prime("22") is None
 
 assert twins(101) == 103
-assert twins(79) == False
-assert twins(5, 7) == True
+assert twins(79) is False
+assert twins(5, 7) is True

@@ -1,11 +1,14 @@
 # Wykład 1 - Zadanie 4
-# Napisz program tworzący ze zbioru U = {'👻', '🕵', '🔺', '🐉', '🐍', '🦂', '🔥', '🌻', '🐙', '🌌'} zbiór zawierający wszystkie podzbiory U (włącznie z pustym i U).
+# Napisz program tworzący ze zbioru U = {'👻', '🕵', '🔺', '🐉', '🐍', '🦂', '🔥', '🌻', '🐙', '🌌'} zbiór zawierający
+# wszystkie podzbiory U (włącznie z pustym i U).
 
-# UWAGA: w Pythonie zbiory (set) nie mogą być elementami innych zbiorów, proszę użyć frozenset jako zbiorów wewnętrznych.
+# UWAGA: w Pythonie zbiory (set) nie mogą być elementami innych zbiorów, proszę użyć frozenset jako zbiorów
+# wewnętrznych.
 
 # Wynik przypisz do zmienej result.
 
 U = {'👻', '🕵', '🔺', '🐉', '🐍', '🦂', '🔥', '🌻', '🐙', '🌌'}
+
 
 def powset(inputSet):
     powerset = set()
@@ -16,6 +19,7 @@ def powset(inputSet):
             temp.add(x)
             powerset.add(frozenset(temp))
     return powerset
+
 
 # shorthand
 # result = {frozenset()}

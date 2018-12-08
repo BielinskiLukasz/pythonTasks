@@ -1,5 +1,7 @@
 # Zadanie 4
-# Napisz funkcję fibonacci_list, która dla zadanego n obliczy n liczb ciągu Fibonacciego, zwracając listę liczb z zadanego ciągu.
+# Napisz funkcję fibonacci_list, która dla zadanego n obliczy n liczb ciągu Fibonacciego, zwracając listę liczb
+# z zadanego ciągu.
+
 
 def fibonacci_list(n):
     if n == 0:
@@ -15,5 +17,6 @@ def fibonacci_list(n):
             result.append(result[counter - 1] + result[counter - 2])
             counter += 1
         return result
+
 
 assert fibonacci_list(7) == [1, 1, 2, 3, 5, 8, 13]
